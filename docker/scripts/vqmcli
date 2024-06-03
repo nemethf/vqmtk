@@ -315,7 +315,7 @@ function checkVideos {
         local ext_dis=$(echo "${vid_dis#*.}")
 
         local dur_ref=$(ffprobeVideoProp $vid_ref duration)
-        local dur_dis=$(ffprobeVideoProp $vid_dir duration)
+        local dur_dis=$(ffprobeVideoProp $vid_dis duration)
 
         local wid_ref=$(ffprobeVideoProp $vid_ref width)
         local hei_ref=$(ffprobeVideoProp $vid_ref height)
